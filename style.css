@@ -78,7 +78,7 @@ body{
 }
 
 
-/*--- Course Section --*/
+/*--- About Section --*/
 .narrow {
   width: 75%;
   margin: 1.5rem auto;
@@ -162,6 +162,30 @@ h3.heading {
 }
 
 /*--- Client section --*/
+.jumbotron-portfolio {
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+}
+
+.portfolio {
+  overflow: hidden;
+}
+
+.portfolio img {
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.row.no-padding [class*=col-] {
+  padding: 0;
+}
+
+/*--- Clients --*/
 .clients img {
   width: 100%;
   border-radius: 50%;
