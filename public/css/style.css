@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
-body{
+
+body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-  color:#505962;
+  color: #505962;
 }
 
 .offset:before {
@@ -38,12 +39,12 @@ body{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: #8497e2;
 }
 
 /*--- Landing page --*/
 .home-inner {
-  background-image: url(img/computers.png);
+  background-image: url(../../img/city.png);
 }
 
 .caption {
@@ -97,16 +98,16 @@ body{
   padding-left: .6rem 1.2rem;
   margin: 1rem;
   color: white;
-  background-color: #1ebba3;
-  border-color: #1ebba3;
+  background-color: #8497e2;
+  border-color: #8497e2;
 }
 
 .btn-secondary:hover {
-  background-color: #189582;
-  border-color: #189582;
+  background-color: #8497e2;
+  border-color: #8497e2;
 }
 
-/*--- Feature section --*/
+/*--- Skill section --*/
 .jumbotron {
   margin-bottom: 0;
   padding: 2rem 0 3.5rem;
@@ -123,32 +124,32 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: .2rem;
-  background-color: #1ebba3;
+  background-color: #4a56b5;
   margin: 0 auto 2rem;
 }
 
-.feature svg.svg-inline--fa {
-  color: #1ebba3;
+.skill svg.svg-inline--fa {
+  color: white;
 }
 
-.feature h3 {
+.skill h3 {
   font-size: 1.3rem;
   text-transform: uppercase;
   padding-bottom: .4rem;
 }
 
-.feature p {
+.skill p {
   font-size: 1.1rem;
 }
 
-/*--- Resources section --*/
+/*--- Links section --*/
 .fixed {
-  background-image: url(img/apple.png);
+  background-image: url(../../img/computer2.png);
   z-index: -1;
 }
 
 .dark {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.30);
   color: white;
   padding: 7rem 2rem;
 }
@@ -161,44 +162,39 @@ h3.heading {
   margin-top: 1.5rem;
 }
 
-/*--- Client section --*/
-.jumbotron-portfolio {
+.jumbotron-project {
   border-radius: 0;
   padding: 3rem 0 2rem;
 }
 
-.portfolio {
+.project {
   overflow: hidden;
 }
 
-.portfolio img {
+.project img {
   max-width: 100%;
   transition: transform .5s ease;
 }
 
-.portfolio img:hover {
+.project img:hover {
   transform: scale(1.1);
   cursor: zoom-in;
+  opacity: 0.6;
 }
 
 .row.no-padding [class*=col-] {
   padding: 0;
 }
 
-/*--- Clients --*/
-.clients img {
-  width: 100%;
-  border-radius: 50%;
+
+/* --- Project Cards -----------------------------*/
+
+.card {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10%
 }
 
-blockquote .svg-inline--fa {
-  color: #1ebba3;
-  margin: 1rem;
-}
-
-.clients-hr {
-  border-top: .05rem solid #1ebba3;
-}
 
 
 /*--- Contact section --*/
@@ -209,22 +205,26 @@ footer {
   margin-top: 1rem;
 }
 
-footer img {
-  height: 3rem;
-  margin: 1.5rem 0;
-}
-
 footer a {
   color: white;
 }
 
+footer h1 {
+  padding-bottom: 1rem;
+}
+
+footer h2 {
+  padding: .4rem;
+  font-size: 20px;
+}
+
 footer svg.svg-inline--fa {
-  font-size: 1.6rem;
-  margin: 1.2rem .5rem 0 0;
+  font-size: 3rem;
+  margin: 2rem 2rem;
 }
 
 footer svg.svg-inline--fa:hover {
-  color: #1ebba3!important;
+  color: #8497e2 !important;
 }
 
 hr.socket {
@@ -232,6 +232,9 @@ hr.socket {
   border-top: .2rem solid #666b71;
   margin-top: 3rem;
 }
+
+
+
 
 /*--- Media Queries --*/
 @media (max-width: 767px) {
@@ -253,12 +256,6 @@ hr.socket {
 
   .narow h1 {
     font-size: 1.5rem;
-  }
-
-  .clients img {
-    max-width: 50%;
-    display: block;
-    margin: 0 auto;
   }
 }
 
