@@ -1,5 +1,5 @@
 # Portfolio
-Michael Lee's website portfolio showcasing his projects and skills as a Software engineer and Web Developer. 
+Michael Lee's website portfolio showcasing his projects and skills as a Software Engineer and Web Developer. 
 
 ## Built with
 HTML, CSS, Bootstrap, jQuery, PHP
