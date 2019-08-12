@@ -8,3 +8,4 @@ HTML, CSS, Bootstrap, jQuery, PHP
 * A responsive website design.
 * PHP contact owner form through email.
 * Routes to project code and deployment. 
+* Uses Font Awesome instead of default text.
