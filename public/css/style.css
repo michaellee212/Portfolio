@@ -39,7 +39,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #8497e2;
+  color: #d4dd8f;
 }
 
 /*--- Landing page --*/
@@ -186,6 +186,17 @@ h3.heading {
   padding: 0;
 }
 
+#links .fa-linkedin:hover {
+  color: #5763e7 !important;
+}
+
+#links .fa-file-alt:hover {
+  color: #66bd58 !important;
+}
+
+#links .fa-github-square:hover {
+  color: #b94bcc !important;
+}
 
 /* --- Project Cards -----------------------------*/
 
@@ -193,6 +204,20 @@ h3.heading {
   width: 80%;
   margin-left: 10%;
   margin-bottom: 10%
+}
+
+.btn-site {
+  background-color: #3d78ee;
+  color: #ffffff;
+}
+
+.btn-git {
+  background-color: #a759b8;
+  color: #ffffff;
+}
+
+#project .btn:hover {
+  color: #000000 !important;
 }
 
 
@@ -223,8 +248,16 @@ footer svg.svg-inline--fa {
   margin: 2rem 2rem;
 }
 
-footer svg.svg-inline--fa:hover {
-  color: #8497e2 !important;
+footer .fa-linkedin:hover {
+  color: #5763e7 !important;
+}
+
+footer .fa-file-alt:hover {
+  color: #66bd58 !important;
+}
+
+footer .fa-github-square:hover {
+  color: #b94bcc !important;
 }
 
 hr.socket {
@@ -233,7 +266,10 @@ hr.socket {
   margin-top: 3rem;
 }
 
-
+.btn-submit {
+  background-color: #2f913e;
+  color: #ffffff;
+}
 
 
 /*--- Media Queries --*/
