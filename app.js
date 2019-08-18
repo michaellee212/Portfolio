@@ -1,14 +1,20 @@
-// const express = require('express');
-// var app = express();
-// const port = 3000;
+$(document).ready(function () {
+    // Check if element is scrolled into view
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
 
-// app.set("view engine", "ejs");
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
 
-
-// app.get("/", (req, res) => {
-//     res.render("index.ejs");
-// });
-
-
-// // Express listens for requests (Start server)
-// app.listen(port, () => console.log(`Portfolio starting on port ${port}!`))
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    // If element is scrolled into view, fade it in
+    $(window).scroll(function () {
+        $('.scroll-animations .animated').each(function () {
+            if (isScrolledIntoView(this) === true) {
+                $(this).addClass('fadeInLeft');
+            }
+        });
+    });
+});

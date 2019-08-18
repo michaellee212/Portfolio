@@ -14,6 +14,25 @@ body {
   margin-top: -4rem;
 }
 
+.scroll-animations {
+  display: inline;
+}
+
+.scroll-animations div {
+  flex-grow: 1;
+  opacity: 0;
+}
+
+.scroll-animations div span {
+  font-size: 4em;
+}
+
+.scroll-animations div h3 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 /*--- Navigation --*/
 
 .navbar {
@@ -46,6 +65,50 @@ body {
 .home-inner {
   background-image: url(../../img/city.png);
 }
+
+.caption span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: -300px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.caption span::before,
+.caption span::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.caption span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.caption span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 .caption {
   width: 100%;
@@ -90,23 +153,6 @@ body {
   font-size: 2.4rem;
 }
 
-.btn-secondary {
-  border-width: medium;
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  padding-left: .6rem 1.2rem;
-  margin: 1rem;
-  color: white;
-  background-color: #8497e2;
-  border-color: #8497e2;
-}
-
-.btn-secondary:hover {
-  background-color: #8497e2;
-  border-color: #8497e2;
-}
-
 /*--- Skill section --*/
 .jumbotron {
   margin-bottom: 0;
@@ -124,7 +170,7 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: .2rem;
-  background-color: #4a56b5;
+  background-color: #4bc7bb;
   margin: 0 auto 2rem;
 }
 
