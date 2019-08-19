@@ -10,22 +10,3 @@ Javascript, HTML, CSS, Bootstrap, jQuery, PHP
 * jQuery page load and scroll animations.
 * Routes to project code and deployment. 
 * Uses Font Awesome instead of default text.
-** hello
-
-## Dependencies
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
